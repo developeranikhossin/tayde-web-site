@@ -1,0 +1,5 @@
+@mixin transition_time($total-time) {
+    -webkit-transition: all $total-time;
+    -o-transition: all $total-time;
+    transition: all $total-time;
+}
