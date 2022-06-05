@@ -1,6 +1,8 @@
 @import './theme-default';
 @import './blog';
 @import './mixin';
+@import './responsive';
+
 
 
 .header-top-area{
@@ -11,6 +13,10 @@
         span{
             color: $color-white;
             font-size: 16px;
+            @media #{$medium_device}{
+                font-size: 13px;
+                font-weight: 600;
+            }
             span{
                 margin-left: 15px;
                 margin-right: 15px;
@@ -47,11 +53,18 @@
     }
     .header-contant{
         ul{
+            display: flex;
             li{
-                display: inline-block;
-                margin-right: 15px;
+                // display: inline-block;
+                display: flex;
                 margin-top: 30px;
                 margin-left: 10px;
+                @media #{$computer_device}{
+                    margin-left: 8px;
+                }
+                @media #{$medium_device}{
+                    margin-left: 10px;
+                }
                 a{
                     text-decoration: none;
                     color: $color-menu;
@@ -69,14 +82,32 @@
                 padding: 15px 30px;
                 border-radius: 10px;
                 font-weight: 400;
+                margin-top: 15px;
+                margin-left: 10px;
+                @media #{$medium_device}{
+                    display: none;
+                }
+            }
+            .header-menu-icon{
                 margin-top: 30px;
-                margin-right: 5px;
+                margin-left: 10px;
+                a{
+                    color: $color-white;
+                    background-color: $color-red;
+                    padding: 15px 30px;
+                    border-radius: 10px;
+                    font-weight: 400;
+                    margin-top: 30px;
+                    margin-right: 5px;
+                    text-decoration: none;
+                }
             }
         }
     }
 }
 
 
+// header-area-end 
 
 
 // slider-area-start
@@ -86,17 +117,34 @@
     height: 600px;
     .slider-contant{
         margin-top: 115px;
+        @media #{$computer_device}{
+            margin-left: 100px;
+        }
+        @media #{$medium_device}{
+            margin-left: 125px;
+        } 
         h1{
             color: $brand-color;
             font-size: 60px;
             font-weight: 600;
             margin-bottom: 30px;
+            @media #{$computer_device}{
+                font-size: 48px;
+            }
+            @media #{$medium_device}{
+                font-size: 37px;
+                font-weight: 600;
+            }
         }
         p{
             font-size: 20px;
             font-weight: 400;
             color: $color-slider-text;
             margin-bottom: 30px;
+            @media #{$medium_device}{
+                color: $color-black;
+                font-weight: 600;
+            }
         }
         button{
             border: none;
@@ -104,6 +152,9 @@
             background-color: $color-red;
             border-radius: 5px;
             padding: 15px 40px;
+            @media #{$medium_device}{
+                font-weight: 600;
+            }
         }
     }
 }
@@ -149,6 +200,9 @@
                     margin-left: 25px;
                 }
                 margin-right: 85px;
+                @media #{$medium_device}{
+                    margin-right: 40px;
+                } 
             }
             .taka-number-2{
                 h1{
@@ -164,6 +218,9 @@
                     margin-left: 25px;
                 }
                 margin-right: 85px;
+                @media #{$medium_device}{
+                    margin-right: 40px;
+                } 
             }
             .taka-number-3{
                 h1{
@@ -178,6 +235,9 @@
                     margin-left: 5px;
                 }
                 margin-right: 85px;
+                @media #{$medium_device}{
+                    margin-right: 40px;
+                } 
             }
             .taka-number-4{
                 h1{
@@ -191,7 +251,7 @@
                     font-weight: 600;
                     margin-left: 5px;
                 }
-                margin-right: 85px;
+                
             }
             
         }
@@ -200,6 +260,13 @@
             padding-top: 54px;
             margin-top: 8px;
             margin-right: -12px;
+            @media #{$computer_device}{
+                display: none;
+                padding: 0px 0px 90px 0px;
+            } 
+            @media #{$medium_device}{
+                display: none;
+            }       
             span{
                 background: #fe5a86;
                 display: block;
@@ -238,6 +305,9 @@
             margin-top: 30px;
             margin-bottom: 25px;
             color: $brand-color;
+            @media #{$medium_device}{
+                font-size: 30px;
+            }  
         }
         p{
             font-size: 18px;
@@ -257,6 +327,9 @@
                 border-radius: 40px;
                 padding: 20px 20px;
                 margin-left: 20px;
+                @media #{$medium_device}{
+                    width: 40%;
+                }
             }
             p{
                 font-size: 20px;
@@ -273,7 +346,10 @@
                   img{
                       width: 25%;
                       border-radius: 50%;
-                  }
+                      @media #{$medium_device}{
+                        width: 50%;
+                      }                   
+                    }
                     .secrion-div{
                         margin-left: 17px;
                         margin-top: 7px;
@@ -336,6 +412,9 @@
 
 .services-area{
     padding: 40px 0;
+    @media #{$medium_device}{
+       margin-top: 70px;
+    }
     .service-title{
         a{
             text-decoration: none;
@@ -360,6 +439,9 @@
     }
     .service-active{
         padding: 90px 0;
+        @media #{$medium_device}{
+            padding: 40px 0;
+         }
         .service-wrapper{
             box-shadow: $box-shadow;
             border: 1px solid white;
@@ -369,11 +451,18 @@
                 img{
                     width: 25%;
                     margin-left: 160px;
+                    @media #{$medium_device}{
+                        margin-left: 110px;
+                        margin-bottom: 22px;
+                     }
                 }
             }
             .service-content{
                 h4{
                     font-weight: 400;
+                    @media #{$medium_device}{
+                        margin-bottom: 22px;
+                     }
                 }
                 p{
                     font-weight: 400;
@@ -395,6 +484,9 @@
 
 .group-area{
     padding: 100px 0px 177px 0px;
+    @media #{$computer_device}{
+        padding: 0px 0px 90px 0px;
+    } 
     .group-img{
         img{
             width: 100%;
@@ -437,6 +529,12 @@
             margin-top: 30px;
             margin-bottom: 25px;
             color: $brand-color;
+            @media #{$computer_device}{
+                font-size: 37px;
+            } 
+            @media #{$medium_device}{
+                font-size: 30px;
+            }          
         }
         p{
             font-size: 18px;
@@ -462,8 +560,8 @@
             transform: rotate(0deg);
         }
         100% {
-            -webkit-transform: rotate(144deg);
-            transform: rotate(144deg);
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
         }
     }
     @keyframes loading-3 {
@@ -472,22 +570,26 @@
             transform: rotate(0deg);
         }
         100% {
-            -webkit-transform: rotate(135deg);
-            transform: rotate(135deg);
+            -webkit-transform: rotate(190deg);
+            transform: rotate(190deg);
         }
     }
     .mt-100 {
         margin-top: 200px;
     }
     .progress {
-        width: 150px;
-        height: 150px !important;
+        width: 133px;
+        height: 135px !important;
         float: left;
         line-height: 150px;
         background: none;
         margin: 20px;
+        margin-right: 13px;
         box-shadow: none;
         position: relative;
+        @media #{$medium_device}{
+            margin: 0px;
+        }
         &:after {
             content: "";
             width: 100%;
@@ -542,9 +644,8 @@
             width: 90%;
             height: 90%;
             border-radius: 50%;
-            background: #000;
             font-size: 24px;
-            color: $color_1;
+            color: $footer-bg;
             line-height: 135px;
             text-align: center;
             position: absolute;
@@ -700,6 +801,13 @@
             color: $brand-color;
             margin-bottom: 20px;
             margin-top: 20px;
+            @media #{$computer_device}{
+                font-size: 31px;
+                margin-top: 50px;
+            }
+            @media #{$medium_device}{
+                font-size: 30px;
+            }
         }
         p{
             font-size: 18px;
@@ -757,6 +865,10 @@
 
 .Testimonial-area{
     padding: 100px 0;
+    @media #{$medium_device}{
+        padding: 60px 0;
+        padding: 13px 15px;
+    }
     .Testimonial-te{}
     .Testimonial-text{
         a{
@@ -872,6 +984,9 @@
 
 .brand-area{
     padding: 100px 0;
+    @media #{$computer_device}{
+        padding: 70px 0;
+    }
     .brand-left{
         a{
             text-decoration: none;
@@ -997,6 +1112,10 @@ footer{
                     background: $footer-bg-icon;
                     border-radius: 30px;
                     color: $color-white;
+                    @media #{$medium_device}{
+                        padding: 13px 15px;
+                        padding: 12px 12px;
+                    }
                     i{
                         font-size: 16px;
                     }
@@ -1036,6 +1155,10 @@ footer{
                         width: 35%;
                         border-radius: 20px;
                         height: 95px;
+                        @media #{$medium_device}{
+                            width: 50%;
+                            height: 90px;
+                        }
                     }
                     .footer-img-section{
                         margin-left: 15px;
@@ -1060,6 +1183,10 @@ footer{
                         width: 35%;
                         border-radius: 20px;
                         height: 95px;
+                        @media #{$medium_device}{
+                            width: 50%;
+                            height: 90px;
+                        }
                      }
                     .footer-img-section-1{
                         margin-left: 15px;
@@ -1091,11 +1218,18 @@ footer{
                 input{
                     padding: 15px 30px;
                     margin-bottom: 40px;
+                    border-radius: 10px;
+                    @media #{$medium_device}{
+                        padding: 12px 12px;
+                    }
                 }
                 h6{
                     font-size: 16px;
                     font-weight: 600;
                     color: $footer-bg-p;
+                    @media #{$medium_device}{
+                        font-size: 15px;
+                    }
                 }
             }
         }

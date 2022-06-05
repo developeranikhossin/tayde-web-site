@@ -6,6 +6,10 @@
     .header-top-area .header-top-left span {
       color: #fff;
       font-size: 16px; }
+      @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        .header-top-area .header-top-left span {
+          font-size: 13px;
+          font-weight: 600; } }
       .header-top-area .header-top-left span span {
         margin-left: 15px;
         margin-right: 15px; }
@@ -27,49 +31,91 @@
     .header-menu-area .header-logo a img {
       width: 52%;
       margin-left: 5px; }
-  .header-menu-area .header-contant ul li {
-    display: inline-block;
-    margin-right: 15px;
-    margin-top: 30px;
-    margin-left: 10px; }
-    .header-menu-area .header-contant ul li a {
-      text-decoration: none;
-      color: #253962;
-      font-size: 18px;
-      font-weight: 400; }
-      .header-menu-area .header-contant ul li a i {
-        margin-left: 5px; }
-  .header-menu-area .header-contant ul button {
-    color: #fff;
-    background-color: #fe5a86;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 10px;
-    font-weight: 400;
-    margin-top: 30px;
-    margin-right: 5px; }
+  .header-menu-area .header-contant ul {
+    display: flex; }
+    .header-menu-area .header-contant ul li {
+      display: flex;
+      margin-top: 30px;
+      margin-left: 10px; }
+      @media only screen and (min-width: 1201px) and (max-width: 1400px) {
+        .header-menu-area .header-contant ul li {
+          margin-left: 8px; } }
+      @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        .header-menu-area .header-contant ul li {
+          margin-left: 10px; } }
+      .header-menu-area .header-contant ul li a {
+        text-decoration: none;
+        color: #253962;
+        font-size: 18px;
+        font-weight: 400; }
+        .header-menu-area .header-contant ul li a i {
+          margin-left: 5px; }
+    .header-menu-area .header-contant ul button {
+      color: #fff;
+      background-color: #fe5a86;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 10px;
+      font-weight: 400;
+      margin-top: 15px;
+      margin-left: 10px; }
+      @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        .header-menu-area .header-contant ul button {
+          display: none; } }
+    .header-menu-area .header-contant ul .header-menu-icon {
+      margin-top: 30px;
+      margin-left: 10px; }
+      .header-menu-area .header-contant ul .header-menu-icon a {
+        color: #fff;
+        background-color: #fe5a86;
+        padding: 15px 30px;
+        border-radius: 10px;
+        font-weight: 400;
+        margin-top: 30px;
+        margin-right: 5px;
+        text-decoration: none; }
 
 .slider-area {
   background-repeat: no-repeat;
   height: 600px; }
   .slider-area .slider-contant {
     margin-top: 115px; }
+    @media only screen and (min-width: 1201px) and (max-width: 1400px) {
+      .slider-area .slider-contant {
+        margin-left: 100px; } }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .slider-area .slider-contant {
+        margin-left: 125px; } }
     .slider-area .slider-contant h1 {
       color: #253962;
       font-size: 60px;
       font-weight: 600;
       margin-bottom: 30px; }
+      @media only screen and (min-width: 1201px) and (max-width: 1400px) {
+        .slider-area .slider-contant h1 {
+          font-size: 48px; } }
+      @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        .slider-area .slider-contant h1 {
+          font-size: 37px;
+          font-weight: 600; } }
     .slider-area .slider-contant p {
       font-size: 20px;
       font-weight: 400;
       color: #74787c;
       margin-bottom: 30px; }
+      @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        .slider-area .slider-contant p {
+          color: #000;
+          font-weight: 600; } }
     .slider-area .slider-contant button {
       border: none;
       color: #fff;
       background-color: #fe5a86;
       border-radius: 5px;
       padding: 15px 40px; }
+      @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        .slider-area .slider-contant button {
+          font-weight: 600; } }
 
 .take-area {
   padding: 30px 0; }
@@ -101,6 +147,9 @@
           font-size: 16px;
           font-weight: 600;
           margin-left: 25px; }
+        @media only screen and (min-width: 992px) and (max-width: 1200px) {
+          .take-area .bg-color .take-number .taka-number-1 {
+            margin-right: 40px; } }
       .take-area .bg-color .take-number .taka-number-2 {
         margin-right: 85px; }
         .take-area .bg-color .take-number .taka-number-2 h1 {
@@ -113,6 +162,9 @@
           font-size: 16px;
           font-weight: 600;
           margin-left: 25px; }
+        @media only screen and (min-width: 992px) and (max-width: 1200px) {
+          .take-area .bg-color .take-number .taka-number-2 {
+            margin-right: 40px; } }
       .take-area .bg-color .take-number .taka-number-3 {
         margin-right: 85px; }
         .take-area .bg-color .take-number .taka-number-3 h1 {
@@ -124,22 +176,30 @@
           font-size: 16px;
           font-weight: 600;
           margin-left: 5px; }
-      .take-area .bg-color .take-number .taka-number-4 {
-        margin-right: 85px; }
-        .take-area .bg-color .take-number .taka-number-4 h1 {
-          font-size: 48px;
-          font-weight: 800;
-          color: #253962; }
-        .take-area .bg-color .take-number .taka-number-4 p {
-          color: #9ea3af;
-          font-size: 16px;
-          font-weight: 600;
-          margin-left: 5px; }
+        @media only screen and (min-width: 992px) and (max-width: 1200px) {
+          .take-area .bg-color .take-number .taka-number-3 {
+            margin-right: 40px; } }
+      .take-area .bg-color .take-number .taka-number-4 h1 {
+        font-size: 48px;
+        font-weight: 800;
+        color: #253962; }
+      .take-area .bg-color .take-number .taka-number-4 p {
+        color: #9ea3af;
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 5px; }
     .take-area .bg-color .taka-number-5 {
       transform: rotate(-90deg);
       padding-top: 54px;
       margin-top: 8px;
       margin-right: -12px; }
+      @media only screen and (min-width: 1201px) and (max-width: 1400px) {
+        .take-area .bg-color .taka-number-5 {
+          display: none;
+          padding: 0px 0px 90px 0px; } }
+      @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        .take-area .bg-color .taka-number-5 {
+          display: none; } }
       .take-area .bg-color .taka-number-5 span {
         background: #fe5a86;
         display: block;
@@ -165,6 +225,9 @@
     margin-top: 30px;
     margin-bottom: 25px;
     color: #253962; }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .about-area .about-text h1 {
+        font-size: 30px; } }
   .about-area .about-text p {
     font-size: 18px;
     font-weight: 400;
@@ -182,6 +245,9 @@
       border-radius: 40px;
       padding: 20px 20px;
       margin-left: 20px; }
+      @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        .about-area .about-text .about-img img {
+          width: 40%; } }
     .about-area .about-text .about-img p {
       font-size: 20px;
       font-weight: 400;
@@ -194,6 +260,9 @@
     .about-area .about-text .about-img-section .about-img-section-1 img {
       width: 25%;
       border-radius: 50%; }
+      @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        .about-area .about-text .about-img-section .about-img-section-1 img {
+          width: 50%; } }
     .about-area .about-text .about-img-section .about-img-section-1 .secrion-div {
       margin-left: 17px;
       margin-top: 7px; }
@@ -230,6 +299,9 @@
 
 .services-area {
   padding: 40px 0; }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .services-area {
+      margin-top: 70px; } }
   .services-area .service-title a {
     text-decoration: none;
     font-size: 14px;
@@ -249,6 +321,9 @@
     color: #253962; }
   .services-area .service-active {
     padding: 90px 0; }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .services-area .service-active {
+        padding: 40px 0; } }
     .services-area .service-active .service-wrapper {
       box-shadow: 0px 0px 4px 1px;
       border: 1px solid white;
@@ -257,8 +332,15 @@
       .services-area .service-active .service-wrapper .service-thumb img {
         width: 25%;
         margin-left: 160px; }
+        @media only screen and (min-width: 992px) and (max-width: 1200px) {
+          .services-area .service-active .service-wrapper .service-thumb img {
+            margin-left: 110px;
+            margin-bottom: 22px; } }
       .services-area .service-active .service-wrapper .service-content h4 {
         font-weight: 400; }
+        @media only screen and (min-width: 992px) and (max-width: 1200px) {
+          .services-area .service-active .service-wrapper .service-content h4 {
+            margin-bottom: 22px; } }
       .services-area .service-active .service-wrapper .service-content p {
         font-weight: 400; }
       .services-area .service-active .service-wrapper .service-content a {
@@ -266,6 +348,9 @@
 
 .group-area {
   padding: 100px 0px 177px 0px; }
+  @media only screen and (min-width: 1201px) and (max-width: 1400px) {
+    .group-area {
+      padding: 0px 0px 90px 0px; } }
   .group-area .group-img img {
     width: 100%;
     transform: rotate(-9deg); }
@@ -296,6 +381,12 @@
     margin-top: 30px;
     margin-bottom: 25px;
     color: #253962; }
+    @media only screen and (min-width: 1201px) and (max-width: 1400px) {
+      .group-area .group-text h1 {
+        font-size: 37px; } }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .group-area .group-text h1 {
+        font-size: 30px; } }
   .group-area .group-text p {
     font-size: 18px;
     font-weight: 400;
@@ -312,26 +403,30 @@
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   100% {
-    -webkit-transform: rotate(144deg);
-    transform: rotate(144deg); } }
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); } }
 @keyframes loading-3 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   100% {
-    -webkit-transform: rotate(135deg);
-    transform: rotate(135deg); } }
+    -webkit-transform: rotate(190deg);
+    transform: rotate(190deg); } }
   .group-area .mt-100 {
     margin-top: 200px; }
   .group-area .progress {
-    width: 150px;
-    height: 150px !important;
+    width: 133px;
+    height: 135px !important;
     float: left;
     line-height: 150px;
     background: none;
     margin: 20px;
+    margin-right: 13px;
     box-shadow: none;
     position: relative; }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .group-area .progress {
+        margin: 0px; } }
     .group-area .progress:after {
       content: "";
       width: 100%;
@@ -379,9 +474,8 @@
       width: 90%;
       height: 90%;
       border-radius: 50%;
-      background: #000;
       font-size: 24px;
-      color: #fff;
+      color: #253962;
       line-height: 135px;
       text-align: center;
       position: absolute;
@@ -474,6 +568,13 @@
     color: #253962;
     margin-bottom: 20px;
     margin-top: 20px; }
+    @media only screen and (min-width: 1201px) and (max-width: 1400px) {
+      .teams-area .teams-text h1 {
+        font-size: 31px;
+        margin-top: 50px; } }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .teams-area .teams-text h1 {
+        font-size: 30px; } }
   .teams-area .teams-text p {
     font-size: 18px;
     font-weight: 600;
@@ -515,6 +616,10 @@
 
 .Testimonial-area {
   padding: 100px 0; }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .Testimonial-area {
+      padding: 60px 0;
+      padding: 13px 15px; } }
   .Testimonial-area .Testimonial-text a {
     text-decoration: none;
     font-size: 14px;
@@ -589,6 +694,9 @@
 
 .brand-area {
   padding: 100px 0; }
+  @media only screen and (min-width: 1201px) and (max-width: 1400px) {
+    .brand-area {
+      padding: 70px 0; } }
   .brand-area .brand-left a {
     text-decoration: none;
     font-size: 14px;
@@ -677,6 +785,10 @@ footer .footer-area {
       background: #de4b39;
       border-radius: 30px;
       color: #fff; }
+      @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        footer .footer-area .footer-bottom .footer-about a {
+          padding: 13px 15px;
+          padding: 12px 12px; } }
       footer .footer-area .footer-bottom .footer-about a i {
         font-size: 16px; }
     footer .footer-area .footer-bottom .footer-Details h1 {
@@ -705,6 +817,10 @@ footer .footer-area {
         width: 35%;
         border-radius: 20px;
         height: 95px; }
+        @media only screen and (min-width: 992px) and (max-width: 1200px) {
+          footer .footer-area .footer-bottom .footer-News .footer-img img {
+            width: 50%;
+            height: 90px; } }
       footer .footer-area .footer-bottom .footer-News .footer-img .footer-img-section {
         margin-left: 15px; }
         footer .footer-area .footer-bottom .footer-News .footer-img .footer-img-section p {
@@ -722,6 +838,10 @@ footer .footer-area {
         width: 35%;
         border-radius: 20px;
         height: 95px; }
+        @media only screen and (min-width: 992px) and (max-width: 1200px) {
+          footer .footer-area .footer-bottom .footer-News .footer-img-1 img {
+            width: 50%;
+            height: 90px; } }
       footer .footer-area .footer-bottom .footer-News .footer-img-1 .footer-img-section-1 {
         margin-left: 15px; }
         footer .footer-area .footer-bottom .footer-News .footer-img-1 .footer-img-section-1 p {
@@ -743,11 +863,18 @@ footer .footer-area {
       color: #9ea3af; }
     footer .footer-area .footer-bottom .footer-Subscribe input {
       padding: 15px 30px;
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      border-radius: 10px; }
+      @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        footer .footer-area .footer-bottom .footer-Subscribe input {
+          padding: 12px 12px; } }
     footer .footer-area .footer-bottom .footer-Subscribe h6 {
       font-size: 16px;
       font-weight: 600;
       color: #9ea3af; }
+      @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        footer .footer-area .footer-bottom .footer-Subscribe h6 {
+          font-size: 15px; } }
   footer .footer-area .footer-copy {
     padding-top: 100px;
     padding-bottom: 20px; }
