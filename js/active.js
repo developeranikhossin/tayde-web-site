@@ -1,5 +1,11 @@
 $(document) .ready(function(){
 
+    jQuery('#mobile-menu').meanmenu({
+        meanScreenWidth: "767",
+        meanMenuContainer: '.mobile-menu'
+    });
+    
+
 
     /* project area */
 
@@ -8,10 +14,10 @@ $(document) .ready(function(){
         nav:true,
         responsive:{
             0:{
-                items:1
+                items:0
             },
             600:{
-                items:2
+                items:1
             },
             1000:{
                 items:3

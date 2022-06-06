@@ -1,7 +1,6 @@
+$computer_device_xxl : 'only screen and (min-width: 1401px) and (max-width: 1800px)';
 $computer_device : 'only screen and (min-width: 1201px) and (max-width: 1400px)';
 $medium_device : 'only screen and (min-width: 992px) and (max-width: 1200px)';
 $tab_device:'only screen and (min-width: 768px) and (max-width: 991px)'; 
-$smaLL_mobile:'(eax-width: 767px)';
+$smaLL_mobile: '(max-width: 767px)';
 $Large_mobiLe: 'only screen and (min-width: 480px) and (max-width: 767px)';
-
-

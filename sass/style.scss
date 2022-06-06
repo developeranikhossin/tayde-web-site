@@ -11,6 +11,7 @@ header{
         background: $color-red;
         height: 40px;
         .header-top-left{
+            
             margin-top: 5px;
             span{
                 color: $color-white;
@@ -22,6 +23,9 @@ header{
                 @media #{$tab_device}{
                     font-size: 12px;
                     font-weight: 600;
+                }
+                @media #{$Large_mobiLe}{
+                    font-size: 11px;
                 }
                 span{
                     margin-left: 15px;
@@ -37,6 +41,9 @@ header{
             }
         }
         .header-top-right{
+            @media #{$Large_mobiLe}{
+                display: none;
+            }
             margin-top: 5px;
             
             span{
@@ -58,6 +65,11 @@ header{
         height: 110px;
         .header-logo{
             margin-top: 35px;
+            @media #{$smaLL_mobile}{
+                padding: 10px 0;
+                margin-top: 0px;
+                text-align: center;
+            }
             a{
                 img{
                     width: 52%;
@@ -65,32 +77,59 @@ header{
                     @media #{$tab_device}{
                         width: 92%;
                     }
+                    @media #{$smaLL_mobile}{
+                        width: 22%;
+                    }
                 }
             }
         }
-        .header-contant{
-            ul{
+        .header-contant{ 
+            @media #{$medium_device}{
+                display: ruby-base;
+            }
+            @media #{$computer_device}{
                 display: flex;
-                li{
-                    // display: inline-block;
+            }
+            @media #{$computer_device_xxl}{
+                display: flex;
+            }
+            nav{
+                ul{
                     display: flex;
-                    margin-top: 30px;
-                    margin-left: 10px;
-                    @media #{$computer_device}{
-                        margin-left: 8px;
-                    }
-                    @media #{$medium_device}{
+                    li{
+                        display: flex;
+                        margin-top: 30px;
                         margin-left: 10px;
-                    }
-                    a{
-                        text-decoration: none;
-                        color: $color-menu;
-                        font-size: 18px;
-                        font-weight: 400;
-                        i{
-                            margin-left: 5px;
+                        @media #{$computer_device}{
+                            margin-left: 8px;
+                        }
+                        @media #{$medium_device}{
+                            margin-left: 10px;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: $color-menu;
+                            font-size: 18px;
+                            font-weight: 600;
+                            @media #{$computer_device}{
+                                font-size: 16px;
+                            }
+                            i{
+                                margin-left: 5px;
+                                @media #{$smaLL_mobile}{
+                                    margin-right: 10px;
+                                }
+                            }
                         }
                     }
+                }
+            }
+            .header-right{
+                @media #{$computer_device}{
+                    display: block ruby;
+                }
+                @media #{$computer_device_xxl}{
+                    display: block ruby;
                 }
                 button{
                     color: $color-white;
@@ -107,9 +146,15 @@ header{
                     @media #{$tab_device}{
                         display: none;
                     }
+                    @media #{$smaLL_mobile}{
+                        display: none;
+                    }
                 }
                 .header-menu-icon{
                     @media #{$tab_device}{
+                        display: none;
+                    }
+                    @media #{$smaLL_mobile}{
                         display: none;
                     }
                     margin-top: 30px;
@@ -150,6 +195,10 @@ header{
             margin-top: 80px;
             margin-left: 55px;
         }
+        @media #{$smaLL_mobile}{
+           text-align: center;
+           margin-top: 140px;
+        }
         h1{
             color: $brand-color;
             font-size: 60px;
@@ -165,6 +214,9 @@ header{
             @media #{$tab_device}{
                 font-size: 35px;
             }
+            @media #{$smaLL_mobile}{
+                font-size: 36px;
+             }
         }
         p{
             font-size: 20px;
@@ -178,6 +230,9 @@ header{
             @media #{$tab_device}{
                 color: $brand-color;
             }
+            @media #{$smaLL_mobile}{
+                color: $brand-color;
+             }
         }
         button{
             border: none;
@@ -191,6 +246,9 @@ header{
             @media #{$tab_device}{
                 font-weight: 600;
             }
+            @media #{$smaLL_mobile}{
+                font-weight: 600;
+             }
         }
     }
 }
@@ -229,17 +287,32 @@ header{
             @media #{$tab_device}{
                 margin-left: 70px;
             }
+            @media #{$smaLL_mobile}{
+                margin-right: 10px;
+             }
+             @media #{$smaLL_mobile}{
+                margin-left: 60px;
+             }
             .taka-number-1{
+                @media #{$smaLL_mobile}{
+                    margin-right: 0px;
+                 }
                 h1{
                     font-size: 48px;
                     font-weight: 800;
                     color: $brand-color;
+                    @media #{$smaLL_mobile}{
+                        margin-right: 10px;
+                    }
                 }
                 p{
                     color: $footer-bg-p;
                     font-size: 16px;
                     font-weight: 600;
                     margin-left: 25px;
+                    @media #{$smaLL_mobile}{
+                        margin-left: 0px;
+                     }
                 }
                 margin-right: 85px;
                 @media #{$medium_device}{
@@ -247,6 +320,12 @@ header{
                 } 
             }
             .taka-number-2{
+                @media #{$smaLL_mobile}{
+                    margin-right: 10px;
+                 }
+                 @media #{$smaLL_mobile}{
+                    margin-right: 45px;
+                 }
                 h1{
                     font-size: 48px;
                     font-weight: 800;
@@ -265,6 +344,12 @@ header{
                 } 
             }
             .taka-number-3{
+                @media #{$smaLL_mobile}{
+                    margin-right: 10px;
+                 }
+                 @media #{$smaLL_mobile}{
+                    margin-right: 50px;
+                 }
                 h1{
                     font-size: 48px;
                     font-weight: 800;
@@ -282,6 +367,9 @@ header{
                 } 
             }
             .taka-number-4{
+                @media #{$smaLL_mobile}{
+                    margin-right: 10px;
+                 }
                 h1{
                     font-size: 48px;
                     font-weight: 800;
@@ -311,7 +399,10 @@ header{
             } 
             @media #{$tab_device}{
                 display: none;
-            }      
+            }    
+            @media #{$smaLL_mobile}{
+                display: none;
+            }  
             span{
                 background: #fe5a86;
                 display: block;
@@ -331,6 +422,9 @@ header{
 .about-area{
     padding: 30px 0;
     .about-text{
+        @media #{$smaLL_mobile}{
+            text-align: center;
+        }
         a{
             text-decoration: none;
             font-size: 14px;
@@ -357,6 +451,9 @@ header{
                 font-size: 20px;
 	            font-weight: 600;
                 margin-bottom: 20px;
+            }
+            @media #{$smaLL_mobile}{
+                font-size: 30px;
             }
         }
         p{
@@ -400,6 +497,9 @@ header{
             }
         }
         .about-img-section{
+            @media #{$smaLL_mobile}{
+                padding: 20px 0;
+            }
             .about-img-section-1{
                 display: flex;
                   img{
@@ -431,8 +531,12 @@ header{
         }
     }
     .about-img-right{
+        
         img{
             width: 100%;
+            @media #{$smaLL_mobile}{
+                border-radius: 20px;
+            }
         }
     }
     .about-img-right-text{
@@ -444,6 +548,9 @@ header{
             @media #{$tab_device}{
                 margin-top: 20px;
                 border-radius: 0px;
+            }
+            @media #{$smaLL_mobile}{
+                margin-top: 16px;
             }
             h1{
                 font-size: 24px;
@@ -506,6 +613,9 @@ header{
         @media #{$tab_device}{
             padding: 20px 0;
         }
+        @media #{$smaLL_mobile}{
+            padding: 15px 0;
+        }
         .service-wrapper{
             box-shadow: $box-shadow;
             border: 1px solid white;
@@ -545,7 +655,6 @@ header{
 
 // group-area-start 
 
-
 .group-area{
     padding: 100px 0px 177px 0px;
     @media #{$computer_device}{
@@ -554,36 +663,71 @@ header{
     @media #{$tab_device}{
         padding: 0px 0px 60px 0px;
     }
-    .group-img{
-        @media #{$tab_device}{
-            display: none;
-        }
-        img{
-            width: 100%;
-            transform: rotate(-9deg);
-        }
+    @media #{$smaLL_mobile}{
+        padding: 10px 0px 70px 0px;
     }
-    .group-img-2{
-        @media #{$tab_device}{
+    .group-img-section{
+        @media #{$smaLL_mobile}{
             display: none;
         }
-        h5{
+        .group-img{
+            @media #{$tab_device}{
+                display: none;
+            }
             img{
-                width: 45%;
+                width: 100%;
                 transform: rotate(-9deg);
-                margin-left: -23px;
-                margin-top: -9px;
             }
         }
-        img{
-            width: 100%;
-            margin-top: -123px;
-            transform: rotate(-13deg);
-            margin-left: -152px;
+        .group-img-2{
+            @media #{$tab_device}{
+                display: none;
+            }
+            h5{
+                img{
+                    width: 45%;
+                    transform: rotate(-9deg);
+                    margin-left: -23px;
+                    margin-top: -9px;
+                    @media #{$computer_device}{
+                        margin-left: 284px;
+	                    margin-top: -200px;
+                    }
+                    @media #{$medium_device}{
+                        margin-left: 232px;
+	                    margin-top: -216px;
+                    }
+                    @media #{$computer_device_xxl}{
+                        margin-left: 326px;
+	                    margin-top: -232px;
+                    }
+                }
+            }
+            img{
+                width: 100%;
+                margin-top: -123px;
+                transform: rotate(-13deg);
+                margin-left: -152px;
+                @media #{$computer_device}{
+                    margin-top: -100px;
+	                margin-left: 127px;
+                }
+                @media #{$medium_device}{
+                    margin-top: -103px;
+                    margin-left: 118px;
+                }
+                @media #{$computer_device_xxl}{
+                    margin-top: -110px;
+	                margin-left: 169px;
+                }
+            }
         }
     }
     .group-text{
         @media #{$tab_device}{
+            text-align: center;
+        }
+        @media #{$smaLL_mobile}{
             text-align: center;
         }
         a{
@@ -610,7 +754,10 @@ header{
             } 
             @media #{$medium_device}{
                 font-size: 30px;
-            }          
+            }  
+            @media #{$smaLL_mobile}{
+                font-size: 30px;
+            }        
         }
         p{
             font-size: 18px;
@@ -789,6 +936,9 @@ header{
     .class-active{
         padding: 90px 0;
         .class-wrapper-1{
+            @media #{$smaLL_mobile}{
+                margin-bottom: 30px;
+            }  
             box-shadow: $box-shadow;
             border: 1px solid white;
             padding-bottom: 70px;
@@ -817,6 +967,9 @@ header{
             border: 1px solid white;
             padding-bottom: 70px;
             border-radius: 30px;
+            @media #{$smaLL_mobile}{
+                margin-bottom: 30px;
+            }
             .class-thumb{
                 img{
                     width: 100%;
@@ -887,6 +1040,9 @@ header{
             color: $color-white;
             font-weight: 600;
             padding-bottom: 40px;
+            @media #{$smaLL_mobile}{
+                font-size: 30px;
+            }
         }
         a{
             text-decoration: none;
@@ -907,10 +1063,17 @@ header{
 
 .teams-area{
     padding: 110px 0;
+    @media #{$smaLL_mobile}{
+        padding: 80px 0px 0px 0px;
+    }
     .teams-text{
         @media #{$tab_device}{
             text-align: center;
             margin-bottom: 60px;
+        }
+        @media #{$smaLL_mobile}{
+            text-align: center;
+            margin-bottom: 35px;
         }
         a{
             text-decoration: none;
@@ -938,6 +1101,9 @@ header{
             @media #{$medium_device}{
                 font-size: 30px;
             }
+            @media #{$smaLL_mobile}{
+                font-size: 30px;
+            }
         }
         p{
             font-size: 18px;
@@ -961,6 +1127,9 @@ header{
         box-shadow: $box-shadow;
         padding: 70px 0px;
         border-radius: 30px;
+        @media #{$smaLL_mobile}{
+            margin-bottom: 30px;
+        }
         img{
             width: 40%;
             border-radius: 50%;
@@ -1001,6 +1170,9 @@ header{
     }
     @media #{$tab_device}{
         padding: 10px 0;
+    }
+    @media #{$smaLL_mobile}{
+        padding: 50px 0;
     }
     .Testimonial-te{}
     .Testimonial-text{
@@ -1058,6 +1230,9 @@ header{
 
 .blog-area{
     padding: 40px 0;
+    @media #{$smaLL_mobile} {
+        padding: 0px 0px;
+    }
     .blog-title{
         a{
             text-decoration: none;
@@ -1087,6 +1262,9 @@ header{
             border: 1px solid white;
             padding-bottom: 70px;
             border-radius: 30px;
+            @media #{$smaLL_mobile}{
+                margin-bottom: 30px;
+            }
             .blog-thumb{
                 img{
                     width: 100%;
@@ -1111,6 +1289,9 @@ header{
             border: 1px solid white;
             padding-bottom: 70px;
             border-radius: 30px;
+            @media #{$smaLL_mobile}{
+                margin-bottom: 30px;
+            }
             .blog-thumb{
                 img{
                     width: 100%;
@@ -1174,10 +1355,16 @@ header{
     @media #{$tab_device}{
         padding-top: 0;
         padding-bottom: 60px;
-     }
+    }
+    @media #{$smaLL_mobile} {
+        padding: 0 0 40px 0;
+    }
     .brand-left{
         @media #{$tab_device}{
            text-align: center;
+        }
+        @media #{$smaLL_mobile}{
+            text-align: center;
         }
         a{
             text-decoration: none;
@@ -1201,12 +1388,19 @@ header{
             font-size: 24px;
             font-weight: 600;
             color: $footer-bg-p;
+            @media #{$smaLL_mobile} {
+                font-size: 18px;
+                padding: 16px 0px;
+            }
         }
     }
     .brand-right{
         @media #{$tab_device}{
             text-align: center;
             margin-top: 25px;
+        }
+        @media #{$smaLL_mobile}{
+            text-align: center;
         }
          text-align: end;
         a{
@@ -1233,6 +1427,9 @@ header{
             box-shadow: $box-shadow;
             padding-bottom: 17px;
             text-align: center;
+            @media #{$smaLL_mobile} {
+                padding-bottom: 6px;
+            }
             img {
                 width: 37%;
                 @media #{$tab_device}{
@@ -1244,6 +1441,9 @@ header{
             box-shadow: $box-shadow;
             text-align: center;
             padding-bottom: 7px;
+            @media #{$smaLL_mobile} {
+                padding-bottom: 4px;
+            }
             img {
                 width: 39%;
                 @media #{$tab_device}{
@@ -1379,6 +1579,9 @@ footer{
                 }
             }
             .footer-Details{
+                @media #{$smaLL_mobile} {
+                    padding-top: 50px;
+                }
                 h1{
                     color: $color-white;
                     font-size: 24px;
@@ -1400,6 +1603,9 @@ footer{
                 }
             }
             .footer-News{
+                @media #{$smaLL_mobile} {
+                    padding-top: 50px;
+                }
                 @media #{$tab_device}{
                     margin-top: 55px;
                 }
@@ -1464,6 +1670,9 @@ footer{
                 }
             }
             .footer-Subscribe{
+                @media #{$smaLL_mobile} {
+                    padding-top: 50px;
+                }
                 @media #{$tab_device}{
                     margin-top: 55px;
                 }

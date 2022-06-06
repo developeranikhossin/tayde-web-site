@@ -14,6 +14,9 @@ header .header-top-area {
         header .header-top-area .header-top-left span {
           font-size: 12px;
           font-weight: 600; } }
+      @media only screen and (min-width: 480px) and (max-width: 767px) {
+        header .header-top-area .header-top-left span {
+          font-size: 11px; } }
       header .header-top-area .header-top-left span span {
         margin-left: 15px;
         margin-right: 15px; }
@@ -25,6 +28,9 @@ header .header-top-area {
         margin-right: 10px; }
   header .header-top-area .header-top-right {
     margin-top: 5px; }
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      header .header-top-area .header-top-right {
+        display: none; } }
     header .header-top-area .header-top-right span {
       color: #fff;
       font-size: 16px; }
@@ -39,61 +45,96 @@ header .header-menu-area {
   height: 110px; }
   header .header-menu-area .header-logo {
     margin-top: 35px; }
+    @media (max-width: 767px) {
+      header .header-menu-area .header-logo {
+        padding: 10px 0;
+        margin-top: 0px;
+        text-align: center; } }
     header .header-menu-area .header-logo a img {
       width: 52%;
       margin-left: 5px; }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         header .header-menu-area .header-logo a img {
           width: 92%; } }
-  header .header-menu-area .header-contant ul {
+      @media (max-width: 767px) {
+        header .header-menu-area .header-logo a img {
+          width: 22%; } }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    header .header-menu-area .header-contant {
+      display: ruby-base; } }
+  @media only screen and (min-width: 1201px) and (max-width: 1400px) {
+    header .header-menu-area .header-contant {
+      display: flex; } }
+  @media only screen and (min-width: 1401px) and (max-width: 1800px) {
+    header .header-menu-area .header-contant {
+      display: flex; } }
+  header .header-menu-area .header-contant nav ul {
     display: flex; }
-    header .header-menu-area .header-contant ul li {
+    header .header-menu-area .header-contant nav ul li {
       display: flex;
       margin-top: 30px;
       margin-left: 10px; }
       @media only screen and (min-width: 1201px) and (max-width: 1400px) {
-        header .header-menu-area .header-contant ul li {
+        header .header-menu-area .header-contant nav ul li {
           margin-left: 8px; } }
       @media only screen and (min-width: 992px) and (max-width: 1200px) {
-        header .header-menu-area .header-contant ul li {
+        header .header-menu-area .header-contant nav ul li {
           margin-left: 10px; } }
-      header .header-menu-area .header-contant ul li a {
+      header .header-menu-area .header-contant nav ul li a {
         text-decoration: none;
         color: #253962;
         font-size: 18px;
-        font-weight: 400; }
-        header .header-menu-area .header-contant ul li a i {
+        font-weight: 600; }
+        @media only screen and (min-width: 1201px) and (max-width: 1400px) {
+          header .header-menu-area .header-contant nav ul li a {
+            font-size: 16px; } }
+        header .header-menu-area .header-contant nav ul li a i {
           margin-left: 5px; }
-    header .header-menu-area .header-contant ul button {
+          @media (max-width: 767px) {
+            header .header-menu-area .header-contant nav ul li a i {
+              margin-right: 10px; } }
+  @media only screen and (min-width: 1201px) and (max-width: 1400px) {
+    header .header-menu-area .header-contant .header-right {
+      display: block ruby; } }
+  @media only screen and (min-width: 1401px) and (max-width: 1800px) {
+    header .header-menu-area .header-contant .header-right {
+      display: block ruby; } }
+  header .header-menu-area .header-contant .header-right button {
+    color: #fff;
+    background-color: #fe5a86;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-left: 10px; }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      header .header-menu-area .header-contant .header-right button {
+        display: none; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      header .header-menu-area .header-contant .header-right button {
+        display: none; } }
+    @media (max-width: 767px) {
+      header .header-menu-area .header-contant .header-right button {
+        display: none; } }
+  header .header-menu-area .header-contant .header-right .header-menu-icon {
+    margin-top: 30px;
+    margin-left: 10px; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      header .header-menu-area .header-contant .header-right .header-menu-icon {
+        display: none; } }
+    @media (max-width: 767px) {
+      header .header-menu-area .header-contant .header-right .header-menu-icon {
+        display: none; } }
+    header .header-menu-area .header-contant .header-right .header-menu-icon a {
       color: #fff;
       background-color: #fe5a86;
-      border: none;
       padding: 15px 30px;
       border-radius: 10px;
       font-weight: 400;
-      margin-top: 15px;
-      margin-left: 10px; }
-      @media only screen and (min-width: 992px) and (max-width: 1200px) {
-        header .header-menu-area .header-contant ul button {
-          display: none; } }
-      @media only screen and (min-width: 768px) and (max-width: 991px) {
-        header .header-menu-area .header-contant ul button {
-          display: none; } }
-    header .header-menu-area .header-contant ul .header-menu-icon {
       margin-top: 30px;
-      margin-left: 10px; }
-      @media only screen and (min-width: 768px) and (max-width: 991px) {
-        header .header-menu-area .header-contant ul .header-menu-icon {
-          display: none; } }
-      header .header-menu-area .header-contant ul .header-menu-icon a {
-        color: #fff;
-        background-color: #fe5a86;
-        padding: 15px 30px;
-        border-radius: 10px;
-        font-weight: 400;
-        margin-top: 30px;
-        margin-right: 5px;
-        text-decoration: none; }
+      margin-right: 5px;
+      text-decoration: none; }
 
 .slider-area {
   background-repeat: no-repeat;
@@ -110,6 +151,10 @@ header .header-menu-area {
       .slider-area .slider-contant {
         margin-top: 80px;
         margin-left: 55px; } }
+    @media (max-width: 767px) {
+      .slider-area .slider-contant {
+        text-align: center;
+        margin-top: 140px; } }
     .slider-area .slider-contant h1 {
       color: #253962;
       font-size: 60px;
@@ -125,6 +170,9 @@ header .header-menu-area {
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .slider-area .slider-contant h1 {
           font-size: 35px; } }
+      @media (max-width: 767px) {
+        .slider-area .slider-contant h1 {
+          font-size: 36px; } }
     .slider-area .slider-contant p {
       font-size: 20px;
       font-weight: 400;
@@ -137,6 +185,9 @@ header .header-menu-area {
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .slider-area .slider-contant p {
           color: #253962; } }
+      @media (max-width: 767px) {
+        .slider-area .slider-contant p {
+          color: #253962; } }
     .slider-area .slider-contant button {
       border: none;
       color: #fff;
@@ -147,6 +198,9 @@ header .header-menu-area {
         .slider-area .slider-contant button {
           font-weight: 600; } }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .slider-area .slider-contant button {
+          font-weight: 600; } }
+      @media (max-width: 767px) {
         .slider-area .slider-contant button {
           font-weight: 600; } }
 
@@ -175,22 +229,43 @@ header .header-menu-area {
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .take-area .bg-color .take-number {
           margin-left: 70px; } }
+      @media (max-width: 767px) {
+        .take-area .bg-color .take-number {
+          margin-right: 10px; } }
+      @media (max-width: 767px) {
+        .take-area .bg-color .take-number {
+          margin-left: 60px; } }
       .take-area .bg-color .take-number .taka-number-1 {
         margin-right: 85px; }
+        @media (max-width: 767px) {
+          .take-area .bg-color .take-number .taka-number-1 {
+            margin-right: 0px; } }
         .take-area .bg-color .take-number .taka-number-1 h1 {
           font-size: 48px;
           font-weight: 800;
           color: #253962; }
+          @media (max-width: 767px) {
+            .take-area .bg-color .take-number .taka-number-1 h1 {
+              margin-right: 10px; } }
         .take-area .bg-color .take-number .taka-number-1 p {
           color: #9ea3af;
           font-size: 16px;
           font-weight: 600;
           margin-left: 25px; }
+          @media (max-width: 767px) {
+            .take-area .bg-color .take-number .taka-number-1 p {
+              margin-left: 0px; } }
         @media only screen and (min-width: 992px) and (max-width: 1200px) {
           .take-area .bg-color .take-number .taka-number-1 {
             margin-right: 40px; } }
       .take-area .bg-color .take-number .taka-number-2 {
         margin-right: 85px; }
+        @media (max-width: 767px) {
+          .take-area .bg-color .take-number .taka-number-2 {
+            margin-right: 10px; } }
+        @media (max-width: 767px) {
+          .take-area .bg-color .take-number .taka-number-2 {
+            margin-right: 45px; } }
         .take-area .bg-color .take-number .taka-number-2 h1 {
           font-size: 48px;
           font-weight: 800;
@@ -206,6 +281,12 @@ header .header-menu-area {
             margin-right: 40px; } }
       .take-area .bg-color .take-number .taka-number-3 {
         margin-right: 85px; }
+        @media (max-width: 767px) {
+          .take-area .bg-color .take-number .taka-number-3 {
+            margin-right: 10px; } }
+        @media (max-width: 767px) {
+          .take-area .bg-color .take-number .taka-number-3 {
+            margin-right: 50px; } }
         .take-area .bg-color .take-number .taka-number-3 h1 {
           font-size: 48px;
           font-weight: 800;
@@ -218,6 +299,9 @@ header .header-menu-area {
         @media only screen and (min-width: 992px) and (max-width: 1200px) {
           .take-area .bg-color .take-number .taka-number-3 {
             margin-right: 40px; } }
+      @media (max-width: 767px) {
+        .take-area .bg-color .take-number .taka-number-4 {
+          margin-right: 10px; } }
       .take-area .bg-color .take-number .taka-number-4 h1 {
         font-size: 48px;
         font-weight: 800;
@@ -242,6 +326,9 @@ header .header-menu-area {
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .take-area .bg-color .taka-number-5 {
           display: none; } }
+      @media (max-width: 767px) {
+        .take-area .bg-color .taka-number-5 {
+          display: none; } }
       .take-area .bg-color .taka-number-5 span {
         background: #fe5a86;
         display: block;
@@ -250,6 +337,9 @@ header .header-menu-area {
 
 .about-area {
   padding: 30px 0; }
+  @media (max-width: 767px) {
+    .about-area .about-text {
+      text-align: center; } }
   .about-area .about-text a {
     text-decoration: none;
     font-size: 14px;
@@ -275,6 +365,9 @@ header .header-menu-area {
         font-size: 20px;
         font-weight: 600;
         margin-bottom: 20px; } }
+    @media (max-width: 767px) {
+      .about-area .about-text h1 {
+        font-size: 30px; } }
   .about-area .about-text p {
     font-size: 18px;
     font-weight: 400;
@@ -311,6 +404,9 @@ header .header-menu-area {
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .about-area .about-text .about-img p {
           margin-left: 0px; } }
+  @media (max-width: 767px) {
+    .about-area .about-text .about-img-section {
+      padding: 20px 0; } }
   .about-area .about-text .about-img-section .about-img-section-1 {
     display: flex; }
     .about-area .about-text .about-img-section .about-img-section-1 img {
@@ -332,6 +428,9 @@ header .header-menu-area {
         font-weight: 400; }
   .about-area .about-img-right img {
     width: 100%; }
+    @media (max-width: 767px) {
+      .about-area .about-img-right img {
+        border-radius: 20px; } }
   .about-area .about-img-right-text .about-right {
     border: 1px solid #fe5a86;
     background: #fe5a86;
@@ -341,6 +440,9 @@ header .header-menu-area {
       .about-area .about-img-right-text .about-right {
         margin-top: 20px;
         border-radius: 0px; } }
+    @media (max-width: 767px) {
+      .about-area .about-img-right-text .about-right {
+        margin-top: 16px; } }
     .about-area .about-img-right-text .about-right h1 {
       font-size: 24px;
       color: #fff;
@@ -384,6 +486,9 @@ header .header-menu-area {
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .services-area .service-active {
         padding: 20px 0; } }
+    @media (max-width: 767px) {
+      .services-area .service-active {
+        padding: 15px 0; } }
     .services-area .service-active .service-wrapper {
       box-shadow: 0px 0px 4px 1px;
       border: 1px solid white;
@@ -414,26 +519,59 @@ header .header-menu-area {
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .group-area {
       padding: 0px 0px 60px 0px; } }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .group-area .group-img {
+  @media (max-width: 767px) {
+    .group-area {
+      padding: 10px 0px 70px 0px; } }
+  @media (max-width: 767px) {
+    .group-area .group-img-section {
       display: none; } }
-  .group-area .group-img img {
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .group-area .group-img-section .group-img {
+      display: none; } }
+  .group-area .group-img-section .group-img img {
     width: 100%;
     transform: rotate(-9deg); }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .group-area .group-img-2 {
+    .group-area .group-img-section .group-img-2 {
       display: none; } }
-  .group-area .group-img-2 h5 img {
+  .group-area .group-img-section .group-img-2 h5 img {
     width: 45%;
     transform: rotate(-9deg);
     margin-left: -23px;
     margin-top: -9px; }
-  .group-area .group-img-2 img {
+    @media only screen and (min-width: 1201px) and (max-width: 1400px) {
+      .group-area .group-img-section .group-img-2 h5 img {
+        margin-left: 284px;
+        margin-top: -200px; } }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .group-area .group-img-section .group-img-2 h5 img {
+        margin-left: 232px;
+        margin-top: -216px; } }
+    @media only screen and (min-width: 1401px) and (max-width: 1800px) {
+      .group-area .group-img-section .group-img-2 h5 img {
+        margin-left: 326px;
+        margin-top: -232px; } }
+  .group-area .group-img-section .group-img-2 img {
     width: 100%;
     margin-top: -123px;
     transform: rotate(-13deg);
     margin-left: -152px; }
+    @media only screen and (min-width: 1201px) and (max-width: 1400px) {
+      .group-area .group-img-section .group-img-2 img {
+        margin-top: -100px;
+        margin-left: 127px; } }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .group-area .group-img-section .group-img-2 img {
+        margin-top: -103px;
+        margin-left: 118px; } }
+    @media only screen and (min-width: 1401px) and (max-width: 1800px) {
+      .group-area .group-img-section .group-img-2 img {
+        margin-top: -110px;
+        margin-left: 169px; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .group-area .group-text {
+      text-align: center; } }
+  @media (max-width: 767px) {
     .group-area .group-text {
       text-align: center; } }
   .group-area .group-text a {
@@ -457,6 +595,9 @@ header .header-menu-area {
       .group-area .group-text h1 {
         font-size: 37px; } }
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .group-area .group-text h1 {
+        font-size: 30px; } }
+    @media (max-width: 767px) {
       .group-area .group-text h1 {
         font-size: 30px; } }
   .group-area .group-text p {
@@ -589,6 +730,9 @@ header .header-menu-area {
       border: 1px solid white;
       padding-bottom: 70px;
       border-radius: 30px; }
+      @media (max-width: 767px) {
+        .class-area .class-active .class-wrapper-1 {
+          margin-bottom: 30px; } }
       .class-area .class-active .class-wrapper-1 .class-thumb img {
         width: 100%;
         border-radius: 30px 30px 0px 0px; }
@@ -604,6 +748,9 @@ header .header-menu-area {
       border: 1px solid white;
       padding-bottom: 70px;
       border-radius: 30px; }
+      @media (max-width: 767px) {
+        .class-area .class-active .class-wrapper-2 {
+          margin-bottom: 30px; } }
       .class-area .class-active .class-wrapper-2 .class-thumb img {
         width: 100%;
         border-radius: 30px 30px 0px 0px; }
@@ -646,6 +793,9 @@ header .header-menu-area {
       color: #fff;
       font-weight: 600;
       padding-bottom: 40px; }
+      @media (max-width: 767px) {
+        .registration-area .registration-text h1 {
+          font-size: 30px; } }
     .registration-area .registration-text a {
       text-decoration: none;
       padding: 15px 30px;
@@ -656,10 +806,17 @@ header .header-menu-area {
 
 .teams-area {
   padding: 110px 0; }
+  @media (max-width: 767px) {
+    .teams-area {
+      padding: 80px 0px 0px 0px; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .teams-area .teams-text {
       text-align: center;
       margin-bottom: 60px; } }
+  @media (max-width: 767px) {
+    .teams-area .teams-text {
+      text-align: center;
+      margin-bottom: 35px; } }
   .teams-area .teams-text a {
     text-decoration: none;
     font-size: 14px;
@@ -684,6 +841,9 @@ header .header-menu-area {
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
       .teams-area .teams-text h1 {
         font-size: 30px; } }
+    @media (max-width: 767px) {
+      .teams-area .teams-text h1 {
+        font-size: 30px; } }
   .teams-area .teams-text p {
     font-size: 18px;
     font-weight: 600;
@@ -703,6 +863,9 @@ header .header-menu-area {
     box-shadow: 0px 0px 4px 1px;
     padding: 70px 0px;
     border-radius: 30px; }
+    @media (max-width: 767px) {
+      .teams-area .team-area-right {
+        margin-bottom: 30px; } }
     .teams-area .team-area-right img {
       width: 40%;
       border-radius: 50%; }
@@ -732,6 +895,9 @@ header .header-menu-area {
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .Testimonial-area {
       padding: 10px 0; } }
+  @media (max-width: 767px) {
+    .Testimonial-area {
+      padding: 50px 0; } }
   .Testimonial-area .Testimonial-text a {
     text-decoration: none;
     font-size: 14px;
@@ -769,6 +935,9 @@ header .header-menu-area {
 
 .blog-area {
   padding: 40px 0; }
+  @media (max-width: 767px) {
+    .blog-area {
+      padding: 0px 0px; } }
   .blog-area .blog-title a {
     text-decoration: none;
     font-size: 14px;
@@ -793,6 +962,9 @@ header .header-menu-area {
       border: 1px solid white;
       padding-bottom: 70px;
       border-radius: 30px; }
+      @media (max-width: 767px) {
+        .blog-area .blog-active .blog-wrapper-1 {
+          margin-bottom: 30px; } }
       .blog-area .blog-active .blog-wrapper-1 .blog-thumb img {
         width: 100%;
         border-radius: 30px 30px 0px 0px; }
@@ -808,6 +980,9 @@ header .header-menu-area {
       border: 1px solid white;
       padding-bottom: 70px;
       border-radius: 30px; }
+      @media (max-width: 767px) {
+        .blog-area .blog-active .blog-wrapper-2 {
+          margin-bottom: 30px; } }
       .blog-area .blog-active .blog-wrapper-2 .blog-thumb img {
         width: 100%;
         border-radius: 30px 30px 0px 0px; }
@@ -846,7 +1021,13 @@ header .header-menu-area {
     .brand-area {
       padding-top: 0;
       padding-bottom: 60px; } }
+  @media (max-width: 767px) {
+    .brand-area {
+      padding: 0 0 40px 0; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .brand-area .brand-left {
+      text-align: center; } }
+  @media (max-width: 767px) {
     .brand-area .brand-left {
       text-align: center; } }
   .brand-area .brand-left a {
@@ -868,12 +1049,19 @@ header .header-menu-area {
     font-size: 24px;
     font-weight: 600;
     color: #9ea3af; }
+    @media (max-width: 767px) {
+      .brand-area .brand-left p {
+        font-size: 18px;
+        padding: 16px 0px; } }
   .brand-area .brand-right {
     text-align: end; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .brand-area .brand-right {
         text-align: center;
         margin-top: 25px; } }
+    @media (max-width: 767px) {
+      .brand-area .brand-right {
+        text-align: center; } }
     .brand-area .brand-right a {
       text-decoration: none;
       padding: 15px 30px;
@@ -894,6 +1082,9 @@ header .header-menu-area {
       box-shadow: 0px 0px 4px 1px;
       padding-bottom: 17px;
       text-align: center; }
+      @media (max-width: 767px) {
+        .brand-area .brand-buttom .brand-img-1 {
+          padding-bottom: 6px; } }
       .brand-area .brand-buttom .brand-img-1 img {
         width: 37%; }
         @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -903,6 +1094,9 @@ header .header-menu-area {
       box-shadow: 0px 0px 4px 1px;
       text-align: center;
       padding-bottom: 7px; }
+      @media (max-width: 767px) {
+        .brand-area .brand-buttom .brand-img-2 {
+          padding-bottom: 4px; } }
       .brand-area .brand-buttom .brand-img-2 img {
         width: 39%; }
         @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -996,6 +1190,9 @@ footer .footer-area {
           padding: 12px 12px; } }
       footer .footer-area .footer-bottom .footer-about a i {
         font-size: 16px; }
+    @media (max-width: 767px) {
+      footer .footer-area .footer-bottom .footer-Details {
+        padding-top: 50px; } }
     footer .footer-area .footer-bottom .footer-Details h1 {
       color: #fff;
       font-size: 24px;
@@ -1011,6 +1208,9 @@ footer .footer-area {
         text-decoration: none; }
         footer .footer-area .footer-bottom .footer-Details li a i {
           margin-right: 10px; }
+    @media (max-width: 767px) {
+      footer .footer-area .footer-bottom .footer-News {
+        padding-top: 50px; } }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       footer .footer-area .footer-bottom .footer-News {
         margin-top: 55px; } }
@@ -1060,6 +1260,9 @@ footer .footer-area {
           font-size: 16px;
           font-weight: 600;
           color: #fff; }
+    @media (max-width: 767px) {
+      footer .footer-area .footer-bottom .footer-Subscribe {
+        padding-top: 50px; } }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       footer .footer-area .footer-bottom .footer-Subscribe {
         margin-top: 55px; } }
